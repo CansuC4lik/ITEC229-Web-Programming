@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB3-Forms</title>
+</head>
+<body>
+    <center>
+    <h1 style="color: rgb(24, 24, 110);">ITEC 229 - Client Side Internet and Web Programming</h1>
+    <h2 style="color: rgb(193, 25, 25);">LAB 3 - FORMs</h2>
+    </center>
+    <h3>Registration</h3>
+    <p>Please fill out this form to register for a Hotmail account...</p>
+    <hr width="50%" align="left">
+    <form>
+        <label for="name"><b>Name: </b></label><input type="text" name="UserName" id="name"><br><br>
+        <label for="surname"><b>Surname: </b></label><input type="text" name="UserSurname" id="Surname"><br><br>
+        <label for="language"><b>Language: </b></label>
+        <select name="language" id="language">
+            <option value="Turkish">Turkish</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+        </select><br><br>
+        <label><b>Gender:</b></label>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="interests"><b>İnterests: </b></label><br>
+        <input type="checkbox" name="interests[]" id="Option1" value="Option1">
+        <label for="Option1">Entertainment</label>
+        <input type="checkbox" name="interests[]" id="Option2" value="Option2">
+        <label for="Option2">Health</label>
+        <input type="checkbox" name="interests[]" id="Option3" value="Option3">
+        <label for="Option3">Music</label>
+        <input type="checkbox" name="interests[]" id="Option4" value="Option4">
+        <label for="Option4">Computers & Technology</label>
+        <br><br>
+        <input type="checkbox" name="interests[]" id="Option5" value="Option5">
+        <label for="Option5">Shopping</label>
+        <input type="checkbox" name="interests[]" id="Option6" value="Option6">
+        <label for="Option6">Sports</label>
+        <input type="checkbox" name="interests[]" id="Option7" value="Option7">
+        <label for="Option7">Travel</label>
+        <input type="checkbox" name="interests[]" id="Option8" value="Option8">
+        <label for="Option8">Business</label><br><br>
+        <label for="email"><b>Current Email Address: </b></label><input type="email" name="email"><span> (optional)</span><br><br>
+        <label for="comments"><b>Comments: </b></label><br>
+        <textarea name="message" id="message" rows="4" cols="40"></textarea>
+        <hr width="50%" align="left">
+        <label for="hotmail"><b>Hotmail ID: </b></label><input type="text" name="hotmail"><span>@hotmail.com</span><br><br>
+        <label for="password"><b>Password: </b></label><input type="password" name="password"><br><br>
+        <label for="password_type"><b>Re-Type Password: </b></label><input type="text" name="password_type"><br><br>
+        <hr width="50%" align="left">
+        <p>If you forget your password or need help with your account, you'll need to confirm the following information:</p>
+        <label for="secQuestion"><b>Security Question: </b></label>
+        <select name="security_question" id="secQuestion">
+            <option value="question">Select a Question to Answer</option>
+            <option value="pet">What is the name of your first pet?</option>
+            <option value="mother">What is your mother's maiden name?</option>
+        </select><br><br>
+        <label for="answer"><b>Your Answer: </b></label><input type="text" name="answer"><br><br>
+        <label for="bday"><b>Birthday: </b></label><input type="date" name="birthday"><br>
+        <hr width="50%" align="left">
+        <br>
+        <center>
+        <input type="submit" value="Submit Your Entries">
+        <input type="reset" value="Clear Your Entries">
+        </center>
+    </form>
+</body>
+</html>
